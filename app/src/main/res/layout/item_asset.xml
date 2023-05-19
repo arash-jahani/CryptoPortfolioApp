@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgAssetLogo"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:src="@mipmap/ic_launcher"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/lblAsset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="16dp"
+        android:textColor="@color/color_e5"
+        android:textSize="13sp"
+        app:layout_constraintStart_toEndOf="@id/imgAssetLogo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_goneMarginStart="8dp"
+        tools:text="bitcoin"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/lblAssetAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/lblAsset"
+        app:layout_constraintTop_toBottomOf="@id/lblAsset"
+        android:textSize="13sp"
+        android:textColor="@color/color_e5"
+        tools:text="2.100"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/lblAssetLastPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/color_e5"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="$20000"/>
+
+    <com.arashjahani.cryptoportfolioapp.base.NumberTextView
+        android:id="@+id/lblAssetLastPriceChangePercent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_e5"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lblAssetLastPrice"
+        tools:text="32.45%"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/lblAssetValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/color_e5"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="$20000"/>
+
+    <com.arashjahani.cryptoportfolioapp.base.NumberTextView
+        android:id="@+id/lblAssetValueProfitPercent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_e5"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lblAssetValue"
+        tools:text="32.45%"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

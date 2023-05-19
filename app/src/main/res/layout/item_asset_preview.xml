@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="8dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgAssetLogo"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/bg_icon_placeholder"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/lblAsset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:text="symbol"
+            android:textColor="@color/color_55"
+            android:textSize="13sp"
+            app:layout_constraintStart_toEndOf="@id/imgAssetLogo"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_goneMarginStart="8dp" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/lblAssetAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="amount"
+            android:textColor="@color/color_55"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="@id/lblAsset"
+            app:layout_constraintTop_toBottomOf="@id/lblAsset" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/lblAssetLastPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="last price"
+            android:textColor="@color/color_55"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/lblAssetLastPriceChangePercent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="change percent"
+            android:textColor="@color/color_55"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lblAssetLastPrice" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/lblAssetValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="value"
+            android:textColor="@color/color_55"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/lblAssetValueProfitPercent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="profit"
+            android:textColor="@color/color_55"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lblAssetValue" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnAddTransaction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:insetLeft="0dp"
+        android:insetTop="0dp"
+        android:insetRight="0dp"
+        android:insetBottom="0dp"
+        android:text="Add Transaction"
+        android:textColor="@color/color_99"
+        android:textSize="13sp"
+        app:cornerRadius="0dp"
+        app:elevation="0dp"
+        app:icon="@drawable/ic_baseline_add"
+        app:iconGravity="textStart"
+        app:iconTint="@color/color_99"
+        app:strokeColor="@null"
+        app:strokeWidth="0dp" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

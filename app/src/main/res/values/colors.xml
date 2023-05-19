@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#101010</color>
+    <color name="colorPrimaryDark">#101010</color>
+    <color name="colorAccent">#ffffff</color>
+
+    <color name="colorDivider">#181818</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="color_01">#010101</color>
+    <color name="colorBgPortfoBalance">#323546</color>
+    <color name="color_e5">#e5e5e5</color>
+    <color name="color_value_profit">#26c288</color>
+    <color name="color_value_lose">#c72a2a</color>
+    <color name="color_60">#606060</color>
+    <color name="color_21">#212121</color>
+    <color name="color_55">#555555</color>
+    <color name="color_99">#999999</color>
+    <color name="color_26">#262626</color>
+    <color name="color_a">#aaaaaa</color>
+    <color name="color_cc">#cccccc</color>
+    <color name="colorSecondary">#26c288</color>
+    <color name="color_c7">#c7c7c7</color>
+    <color name="color_1a">#1a1a1a</color>
+</resources>
